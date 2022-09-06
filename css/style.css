@@ -1,0 +1,30 @@
+footer{
+    display: flex;
+    height: 5%;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+.footer-texto{ 
+    font-weight: 900;
+    font-size: 12px;
+}
+.container-link{
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 12px;  
+}
+.link:hover{
+    color: var(--azul);
+    font-size: 13px; 
+}
+.hiden{
+    display: none;
+}

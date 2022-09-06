@@ -1,6 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-juego{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.juego{
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: blue;
+}
+.inicio{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.inicio h1{ 
+    text-align: center;
+}
+.inicio button{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.tematica form{
+    height: 100%;
+    display:  flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: space-evenly;
+}
+.opciones form{
+    height: 100%;
+    display:  flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: space-evenly;
+}
+.opciones fieldset{
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    
+}
+.partida{
+    align-items: center;
+    justify-content: space-between;
+}
+.partida-botones{
+    width: 80%;
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenido-partida{
+    height: 100%;
+}
+.nueva-partida {
+    padding-bottom: 10px;
+}
+
 footer{
     display: flex;
-    height: 5%;
     padding: 5px;
     justify-content: space-around;
     align-items: center;

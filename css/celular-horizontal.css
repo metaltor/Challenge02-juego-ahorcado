@@ -1,0 +1,154 @@
+@media (max-height: 400px) {
+    .contenido-juego >.tematica > form {
+        align-content: flex-start;
+    }
+    .contenido-juego >.tematica > form > legend {
+        font-size: 18px;
+    }
+    .contenido-juego >.tematica > form > button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        min-width: 40%;
+        max-height: 10%;
+        font-size: 13px;
+    }
+    .contenido-juego >.tematica > form > button:hover{
+        font-size: 15px;
+    }
+    .contenido-juego >.tematica > form > label{
+        font-size: 15px;
+    }
+    body > div.contenido-juego > div.inicio{
+        justify-content: flex-start;
+    }
+    .contenido-juego > .inicio h1{
+        font-size: 20px;
+    }
+    .contenido-juego > .inicio button{
+        max-width: 90%;
+        font-size: 15px;
+    }
+    .contenido-juego > .inicio button:hover{
+        font-size:18px;
+    }
+    .contenido-juego > .nueva-lista >form > input {
+        font-size: 17px;
+    }
+    .contenido-juego > .nueva-lista >form > textarea {
+        font-size: 17px;
+    }
+    
+    .contenido-juego > .nueva-lista >form > button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        min-width: 40%;
+        max-height: 10%;
+        font-size: 13px;
+    }
+    .contenido-juego > .nueva-lista >form > button{
+        font-size: 15px;  
+    }
+    .contenido-juego > .opciones >form > fieldset.colores {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .contenido-juego > .opciones >form > fieldset.colores > label {
+        min-width: 25%;
+    }
+    .contenido-juego > .opciones >form > .opciones-botones button{
+        border: 2px solid black;
+        font-size: 15px;
+        padding: 0 15px;
+        min-height: 20%;
+        border-radius: 5px;
+    }
+    .contenido-juego > .opciones >form > .opciones-botones button:hover{
+       color: white
+    }
+    .opciones form {
+        font-size: 15px;
+        color: white;
+    }
+    .contenido-juego > div.partida {
+        align-content: flex-start;
+    }
+    .contenido-juego >.partida > div.partida-botones {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenido-juego >.partida > .partida-botones >button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        min-width: 20%;
+        max-height: 10%;
+        font-size: 13px;
+    }
+    .contenido-juego >.partida > div.contenido-partida {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .contenido-juego >.partida > .contenido-partida > div.letras-correctas {
+        height: 18%;
+        z-index: 1;
+    }
+    .contenido-juego >.partida > .contenido-partida > div.letras-correctas > div > p.letra{
+        font-size: 30px;
+        width: 20px;
+        
+      }    
+    .contenido-juego >.partida > .contenido-partida > div.letras-usadas-container{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 20%;
+        height: 65%;
+        top: 25%;
+        left: 70%;
+        z-index: 1;
+        background:rgba(10, 10, 10, 0.6);
+    }.contenido-juego >.partida > .contenido-partida > div.letras-usadas-container > p.letra-usada{
+        font-size: 20px;
+        color: white;
+        
+      } 
+      .contenido-juego >.partida > .contenido-partida > div.ahorcado-container {
+        height: 100%;
+      }
+    .contenido-juego >.partida > .contenido-partida > .ahorcado-container > canvas.ahorcado-canvas {
+        height: 70%;
+    }
+    .contenido-juego >.partida > .contenido-partida > .ahorcado-container > .mensaje-resultado {
+       
+        flex-direction: column;
+        align-content:space-between ;
+    }
+    .contenido-juego >.partida > .contenido-partida > .ahorcado-container > .mensaje-resultado > p.mensaje-final{
+        color: white;
+    }
+    .contenido-juego >.partida > .contenido-partida > .ahorcado-container > .mensaje-resultado > .nueva-partida{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .contenido-juego >.partida > .contenido-partida > .ahorcado-container > .mensaje-resultado > .nueva-partida > button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        min-width: 20%;
+        max-height: 10%;
+        font-size: 13px;
+    }
+}

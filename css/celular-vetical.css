@@ -1,0 +1,70 @@
+@media (max-width: 300px) {
+    .mensaje-temporal{
+        font-size: 15px;
+    }
+    .inicio h1{
+        max-width: 80%;
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .tematica legend{
+        font-size: 23px;
+    }
+    .tematica label{
+        width: 80%;
+        font-size: 17px;
+    }
+    .tematica label:hover{
+        font-size: 20px; 
+    }
+    
+    input[type=radio] {
+        border: 0px;
+        margin-right: 10px;
+    } 
+     button{
+        min-width: 60%;
+    }
+    .nueva-lista input {
+        font-size: 15px;
+        padding: 0 2px;
+    }
+    .nueva-lista textarea{
+        font-size: 18px;
+        padding: 0 2px;
+    }
+    .partida-botones{
+        width: 100%;
+        
+    }
+    .partida-botones button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 20%;
+        max-height: 20%;
+        font-size: 13px;
+        padding: 10px 5px
+    }
+    .letra{
+        width: 10px;
+        font-size: 20px;
+    }
+    .letra-usada{
+        width: 15px;
+        font-size: 20px;
+    }
+    footer{
+        max-height: 6%;
+    }
+    .footer-texto{ 
+        max-width: 40%;
+    }
+    .container-link{
+        flex-direction: column-reverse;
+    }
+    
+    
+ }
+
+

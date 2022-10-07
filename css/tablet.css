@@ -1,0 +1,51 @@
+@media (min-width: 750px) {
+    .inicio h1{
+        font-size: 35px;
+    }
+    .tematica label{
+        width: 80%;
+        font-size: 25px;
+    }
+    .tematica label:hover{
+        font-size: 30px; 
+    }
+    button{
+        min-width: 30%;
+        padding: 12px 0;
+    }
+    .inicio button{
+        width: 30%;
+        font-size: 22px;
+
+    }
+    .inicio button:hover{
+        font-size: 26px;
+    }
+    input[type=radio] {
+        border: 0px;
+        width: 10%;
+        height: 18px;
+        margin-right: 15px;
+    }
+    .tematica label:hover{
+        font-size: 25px; 
+    }
+    .mensaje-final {
+        font-size: 25px;
+    }
+
+    .nueva-partida button{
+        font-size: 18px;
+        min-width:25%;
+        max-height: 60%;
+    
+    }
+    footer{
+        max-height: 6%;
+        
+    }
+    .container-link{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+}

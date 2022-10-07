@@ -1,0 +1,9 @@
+@media (min-width: 1000px) {
+    .inicio h1{
+        max-width: 80%;
+        font-size: 40px;
+    }
+    .inicio button{
+        width: 35%;
+    }
+}

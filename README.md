@@ -1,6 +1,7 @@
 # Challenge02-juego-ahorcado
  Juego ahorcado en js con funcionalidades interesantes tales como:
  
+ 
  -Control de volumen 
  -Muteador de musica
  -Cambio de temas

@@ -6,4 +6,7 @@
     .inicio button{
         width: 35%;
     }
+    .tematica label:hover{
+        font-size: 32px; 
+    }
 }

@@ -324,7 +324,7 @@ function mensajeFinal(mensaje){
 //cambiar background image
 function cambiarEscenario(imagen) {
     const $ahorcadoCanvas = document.querySelector('#ahorcado-canvas')
-    $ahorcadoCanvas.style.backgroundImage = `url('../media/images/${imagen}.jpg')`;
+    $ahorcadoCanvas.style.backgroundImage = `url('media/images/${imagen}.jpg')`;
 
 }
 //cambiar mensaje temporal

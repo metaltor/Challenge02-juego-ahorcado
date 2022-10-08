@@ -242,7 +242,7 @@ input[type=radio] {
     width: 100%;
 }
 .partida-botones button{
-    display: flex;
+   
     justify-content: center;
     align-items: center;
     min-width: 30%;

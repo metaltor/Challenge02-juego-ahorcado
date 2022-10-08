@@ -53,6 +53,7 @@ function volverInicio(){
     reiniciarJuego()
     mostrar($inicio)
     ocultar($partida)
+    ocultar($botonTeclado)
     $musica.pause()
 }
 function mostrarOpcionesjuego () {
@@ -84,6 +85,7 @@ function comenzarPartida(event){
     } 
     if (isMobile()){
         mostrar($botonTeclado)
+        $botonTeclado.display='flex'
         $botonTeclado.addEventListener("click", () => {
             document.getElementById("input-ayuda").focus(); 
           });
@@ -103,15 +105,16 @@ function comenzarPartida(event){
     function capturarCaracter(evObject){
         if (isMobile()){
             let caracter = document.querySelector('#input-ayuda').value
-            
-            
-
-
             CompararCaracter(caracter,palabraJunta, palabra) 
             document.querySelector('#input-ayuda').value = ''
         }else{
-            let caracter = evObject.key;
-            CompararCaracter(caracter,palabraJunta, palabra) 
+            if(evObject.keyCode != 123){
+                let caracter = evObject.key;
+                CompararCaracter(caracter,palabraJunta, palabra) 
+            }else{
+                cambiarMensaje('¡Presiona una tecla valida! :(')
+            }
+            
         }
     }
 }
@@ -252,6 +255,7 @@ function arrayCorrectas(palabra) {
 let letrasUsadas  = []
 let intentos = 0
 let letrasAgregadasCorrectas = []
+
 function CompararCaracter(caracter,palabra, palabraSeparada) {
     const $espacioPalabras = document.querySelectorAll('.letra') 
     palabra = palabra.toUpperCase() 
@@ -259,7 +263,7 @@ function CompararCaracter(caracter,palabra, palabraSeparada) {
     let caracMayusCode = caracterMayuscula.charCodeAt()
         console.log(caracter)
     
-    if ((caracMayusCode >= 65 && caracMayusCode <= 90) || caracMayusCode === 209) {
+    if ((caracMayusCode >= 65 && caracMayusCode <= 90) || caracMayusCode === 209 && caracMayusCode != 123) {
         if(!letrasUsadas.includes(caracterMayuscula)){
             console.log('Tecla pulsada: ' + caracterMayuscula) 
         if(!letrasUsadas.includes(caracterMayuscula)){
@@ -310,6 +314,8 @@ function mensajeFinal(mensaje){
     mostrar($resultado)
     const $mensajeFinal =document.querySelector('#mensaje-final')
     $mensajeFinal.innerHTML= mensaje
+
+    ocultar($botonTeclado)
        
 }
     

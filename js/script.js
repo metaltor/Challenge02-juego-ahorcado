@@ -32,7 +32,7 @@ function escogerLista(){
     ocultar($inicio)
     mostrar($tematica)
     $musica.play()
-    document.onkeypress ='';
+    document.onkeyup ='';
     
     
 }
@@ -68,8 +68,11 @@ function volverPartida(){
     ocultar($opciones)
 }
 
+const $botonTeclado = document.getElementById("boton-teclado")
 const $resultado = document.querySelector('#mensaje-resultado')
+
 function comenzarPartida(event){
+    limpiarCanvas()
     event.preventDefault()
     if(!$resultado.classList.contains('hiden')){
         $resultado.style.zIndex ='0'
@@ -78,22 +81,39 @@ function comenzarPartida(event){
     if($partida.classList.contains('hiden')){
         ocultar($tematica)
         mostrar($partida)
+    } 
+    if (isMobile()){
+        mostrar($botonTeclado)
+        $botonTeclado.addEventListener("click", () => {
+            document.getElementById("input-ayuda").focus(); 
+          });
+        
     }
     borrarLetrasUsadas()
     eliminarRayitas()
     event.preventDefault()
     reiniciarJuego()
     cambiarEscenario('panoramica3')
-    document.onkeypress = capturarCaracter;
+    document.onkeyup = capturarCaracter;
+  
     let palabra = sortearPalabra()
     let palabraJunta= palabra.toUpperCase().replace(' ','')
     crearRayitas(palabra)
     arrayCorrectas(palabraJunta)
     function capturarCaracter(evObject){
-        let caracter = evObject.key;
-        CompararCaracter(caracter,palabraJunta, palabra)
+        if (isMobile()){
+            let caracter = document.querySelector('#input-ayuda').value
+            
+            
+
+
+            CompararCaracter(caracter,palabraJunta, palabra) 
+            document.querySelector('#input-ayuda').value = ''
+        }else{
+            let caracter = evObject.key;
+            CompararCaracter(caracter,palabraJunta, palabra) 
+        }
     }
-    
 }
 function volverTematicadeListas() {
     event.preventDefault()
@@ -113,7 +133,7 @@ function reiniciarJuego(){
     letrasUsadas = []
     palabra = ''
     todasLasLetras = []
-    document.onkeypress ='';
+    document.onkeyup ='';
 }
 function pantallaNuevaLista(event){
     event.preventDefault()
@@ -420,9 +440,10 @@ function guardarLocalStorage(){
             (navigator.userAgent.match(/BlackBerry/i))
         );
 }
-if (isMobile()){
-    alert('es movil')
-
-}else{
-    alert('es pc')
+function esAndroid(){
+    if((navigator.userAgent.match(/Android/i))){
+        return true
+    }else{
+        return false
+    }
 }

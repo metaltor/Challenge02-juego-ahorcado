@@ -44,7 +44,8 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    position:relative;
+   
 }
 .juego{
     width: 85%;
@@ -263,9 +264,7 @@ input[type=radio] {
     border-radius: 10px;
     display: flex;
     text-align: center;
-  
     color: white;
-
     flex-direction: column;
     justify-content: space-around;
     
@@ -332,6 +331,21 @@ footer{
 .hiden{
     display: none;
 }
+.input-ayuda-div input{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 1px;
+    width: 5px;
 
+}
+.boton-teclado-div button{
+    max-height: 4%;
+    font-size: 15px;
+    /* position: absolute; */
+    top:0;
+    right:0;
+    
+}
 
 

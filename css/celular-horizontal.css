@@ -1,4 +1,8 @@
 @media (max-height: 400px) {
+
+    .contenido-juego > p.mensaje-temporal{
+        font-size: 13px;
+    }
     .contenido-juego >.tematica > form {
         align-content: flex-start;
     }
@@ -104,8 +108,8 @@
         z-index: 1;
     }
     .contenido-juego >.partida > .contenido-partida > div.letras-correctas > div > p.letra{
-        font-size: 30px;
-        width: 20px;
+        font-size: 20px;
+        width: 12px;
         
       }    
     .contenido-juego >.partida > .contenido-partida > div.letras-usadas-container{
@@ -119,7 +123,7 @@
         z-index: 1;
         background:rgba(10, 10, 10, 0.6);
     }.contenido-juego >.partida > .contenido-partida > div.letras-usadas-container > p.letra-usada{
-        font-size: 20px;
+        font-size: 15px;
         color: white;
         
       } 

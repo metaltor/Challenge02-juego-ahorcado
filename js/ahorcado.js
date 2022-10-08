@@ -103,7 +103,7 @@ function caraMuerta() {
     pincel.stroke();
     
 }
-function ahorcado(numero,palabra, palabraSeparada){
+function ahorcado(numero, palabraSeparada){
   switch (numero) {
     case 0:
       break;
@@ -182,5 +182,8 @@ function ahorcado(numero,palabra, palabraSeparada){
       
       break;
   }
+}
+function limpiarCanvas() {
+  pincel.clearRect(0, 0, 1000,1000);
 }
 

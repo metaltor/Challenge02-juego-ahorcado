@@ -9,4 +9,7 @@
     .tematica label:hover{
         font-size: 32px; 
     }
+    .boton-teclado-div button{
+        display: none;
+    }
 }
